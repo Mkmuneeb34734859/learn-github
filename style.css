@@ -16,16 +16,19 @@
     font-weight: bolder;
     padding: 10px;
     border-style: double;
-    background-color: rgb(255, 148, 166);
+    background-color: rgb(236, 112, 133);
 }
 h3 {
     background-color: rgb(12, 41, 136);
     font-family: serif;
     color: aliceblue;
 }
-p {
+.para1 {
     padding: 5px 5px;
     margin: 5px;
+}
+.para1:hover{
+color: rgb(177, 177, 177);
 }
 span {
     border: none;
@@ -35,7 +38,11 @@ span {
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 1px 1px 1px;
-    
+}
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
 }
 .para2:hover {
     background-color: rgb(245, 234, 221);
