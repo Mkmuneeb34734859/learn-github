@@ -1,45 +1,45 @@
+img {
+    width: 400px;
+}
 
-h1 {
-    color: rgb(230, 22, 136);
-    align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    text-decoration: underline;
-}
-h3 {
-    color: white;
-    background-color: rgb(230, 22, 136);
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-.para1 {
-    text-align: end;
-    align-content: end;
-}
 .parent {
+    padding-top: 100px;
     display: flex;
     flex-direction: row;
     width: 100%;
     border: 5px;
-    min-height: 300px;
     max-width: 1200px;
+    max-height: 300px;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-
-}    
-img {
-    width: 250px;
-    height: 200px;
-    object-fit: cover;
+}
+.child {
+    width: 270px;
+    height: auto;
     padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+button {
+    border-radius: 5px;
+    font-size: 20px;
+    color: rgb(61, 59, 59);
+}
 img:hover{
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: 0.5s;
+}
+#saylani {
+    color: rgb(138, 192, 58);
+}
+#free {
+    color: rgb(58, 112, 192);
+}
+::selection {
+    background-color: #ff7b00;
+    color: white;
 }
