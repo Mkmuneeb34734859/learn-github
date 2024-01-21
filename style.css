@@ -11,11 +11,11 @@ nav {
     width: 100%;
     top: 0;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 .fa-regular {
     padding-left: 20px;
 }
-
 nav > span {
     padding-left: 14px;
 }
@@ -27,6 +27,7 @@ h2 {
 }
 .fa-solid {
     padding-right: 10px;
+    cursor: pointer;
 }
 .inp {
 border: 2px solid #000000;
@@ -58,21 +59,33 @@ p {
     font-size: xx-large;
 }
 .box {
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     margin: 4px;
     position: relative;
     z-index: -100;
     border-radius: 25px;
+    border: 1px solid white;
+}
+.box:hover {
+    box-shadow: 1px 1px 2px lightgray;
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+.parent:hover {
+    box-shadow: 1px 1px 2px lightgray;
+    transform: scale(1.03);
+    transition: 0.5s;
 }
 .parent {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 4px 12px;
+    cursor: pointer;
 }
 .box > img {
-    height: 100px;
+    height: 100%;
     width: 100%;
     border-radius: 100%;
 }
@@ -81,18 +94,30 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 4px 12px;
+    cursor: pointer;
 }
 .box12 {
-    height: 211px;
-    width: 211px;
+    height: 205px;
+    width: 205px;
     margin: 4px;
     position: relative;
     z-index: -100;
     border-radius: 25px;
+    border: 1px solid white;
+}
+.box12:hover {
+    box-shadow: 1px 1px 2px lightgray;
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+.parent12:hover {
+    box-shadow: 1px 1px 2px lightgray;
+    transform: scale(1.03);
+    transition: 0.5s;
 }
 .box12 > img {
-    height: 211px;
-    width: 211px;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
 }
 .free {
@@ -113,9 +138,21 @@ p {
     z-index: -100;
     border-radius: 25px;
     padding-top: 50px;
+    border: 1px solid white;
+}
+.box123:hover {
+    box-shadow: 1px 1px 2px lightgray;
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+.parent123:hover {
+    box-shadow: 1px 1px 2px lightgray;
+    transform: scale(1.03);
+    transition: 0.5s;
 }
 .parent123{
     display: flex;
+    cursor: pointer;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 4px 12px
@@ -131,4 +168,30 @@ p {
 h1 {
     padding-top: 120px;
     padding-left: 18px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .parent123 {
+        flex-direction: column;
+    }
+
+.box123 {
+    width: 90%;
+    margin: 0px auto;
+    border-color: gray;
+    height: 90px;
+    flex-direction: row;
+    padding: 0px;
+}
+
+.box123 > img {
+height: 100%;
+width: 90px;
+}
+
+.box123 > span {
+    margin-top: 0px;
+    padding-left: 12px;
+}
 }
